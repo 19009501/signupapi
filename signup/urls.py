@@ -19,7 +19,7 @@ from mainApp.views import SignupViewSet
 from rest_framework import routers
 from rest_framework.routers import DefaultRouter
 router=routers.DefaultRouter()
-router.register(r'Signup',SignupViewSet,basename="signup")
+router.register(r'signup',SignupViewSet,basename="signup")
 urlpatterns = [
     path('',include(router.urls)),
     path('admin/', admin.site.urls),
